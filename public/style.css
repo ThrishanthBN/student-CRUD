@@ -1,0 +1,126 @@
+/* style.css - simple, clean */
+:root {
+  --bg: #f7f8fb;
+  --card: #fff;
+  --accent: #2463ff;
+  --danger: #e53e3e;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+  padding: 20px;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(10, 10, 10, 0.04);
+  margin-bottom: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e6e9ef;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.list .student {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  border-bottom: 1px solid #f0f2f7;
+}
+
+.student .left {
+  max-width: 72%;
+}
+
+.student h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.student p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+.controls .btn {
+  padding: 6px 9px;
+  border-radius: 6px;
+}
+
+.btn.edit {
+  background: #ffc107;
+  color: #000;
+}
+
+.btn.delete {
+  background: var(--danger);
+  color: #fff;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* inputs used during inline edit */
+.student input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e6e9ef;
+  width: 100%;
+  margin-bottom: 6px;
+}

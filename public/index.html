@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Details - CRUD</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Student Details Entry</h1>
+
+    <!-- Add Student -->
+    <section class="card">
+      <h2>Add Student</h2>
+
+      <form id="addForm">
+        <div class="row">
+          <input name="name" id="name" placeholder="Name" required />
+          <input name="semester" id="semester" placeholder="Semester (e.g. 5)" required />
+        </div>
+
+        <div class="row">
+          <input name="course" id="course" placeholder="Course (e.g. BSc CS)" required />
+          <input name="rollNumber" id="rollNumber" placeholder="Roll Number" required />
+        </div>
+
+        <div class="row">
+          <input name="phone" id="phone" placeholder="Phone (optional)" />
+          <input name="email" id="email" placeholder="Email (optional)" />
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn primary">Add Student</button>
+          <button type="reset" class="btn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Students list -->
+    <section class="card">
+      <h2>All Students</h2>
+      <div id="studentsList" class="list"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
